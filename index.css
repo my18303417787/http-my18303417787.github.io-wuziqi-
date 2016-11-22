@@ -1,0 +1,250 @@
+
+*{margin: 0;padding: 0;}
+.zi{position: absolute;font-size: 40px;width: 200px;height: 50px;top:10px;color:#000;z-index: 999;
+ left:0;right: 0;margin: auto;font-family: '楷体';
+
+}
+
+@keyframes wobble {
+    0% {
+        transform: none;
+    }
+    15% {
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+    30% {
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+    45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+    60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+    75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.ani.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+}
+
+
+
+.box1{width:100%;height:100%;background: url(img/c.jpg)no-repeat center center;
+    background-size: cover;
+    position: absolute;top:0;left:0;right:0;bottom:0;}
+
+.box2{width: 570px;height: 570px;background: url(img/bg.jpg)no-repeat center center;
+    background-size: cover;
+    position: absolute;top:40px;left:0;right: 0;bottom: 0;margin: auto;}
+
+.left {
+    width: 100px;
+    height:200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:210px;
+    top:310px;z-index: 99;
+
+    font-family:'楷体' ;font-size: 22px;line-height: 35px;text-align: center;font-weight:500;
+}
+
+.start {
+    width: 100px;
+    height: 35px;
+    border-radius:7px;
+    background: url(img/4.png);
+    cursor: pointer;
+  margin-bottom:20px;
+}
+.start:hover{color:red;}
+.renji {
+    width: 100px;
+    height: 35px;
+    border-radius:7px;
+    background: url(img/4.png);
+    cursor: pointer;
+
+    margin-bottom:20px;
+}
+.renji:hover{color:red;}
+.rrdz {
+    width: 100px;
+    height: 35px;
+    border-radius:7px;
+    background: url(img/4.png);
+    cursor: pointer;
+    margin-bottom:20px;
+}
+.rrdz:hover{color:red;}
+.cl {
+    width: 100px;
+    height: 35px;
+    border-radius:7px;
+    background: url(img/4.png);
+    cursor: pointer;
+    margin-bottom:20px;
+
+}
+.cl:hover{color:red;}
+.biao {
+    width: 150px;height:150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -500px;
+}
+
+.biao .clock {
+    width: 100%;
+    height: 150px;
+
+    background-image: url(img/cc.png);
+    background-size: cover;
+}
+.biaoh {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: 350px;
+}
+
+.biaoh .clockh {
+    width: 100%;
+    height: 150px;
+
+    background-image: url(img/cc.png);
+    background-size: cover;
+}
+
+.biaoh .time {
+    width: 100%;font-family: '微软雅黑';
+    height: 33px;
+    background: #C29959;
+    position: absolute;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+}
+.biao .time {
+    width: 100%;
+    height: 33px;font-family: '微软雅黑';
+    background: #C29959;
+    position: absolute;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+
+.ani {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/**
+ * @module other
+ * @description 定义脉冲动画
+ * @method pulse
+ */
+
+@keyframes pulse {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.ani.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+.blackwin, .whitewin, .qipu, .qipub {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-image: url("img/d0.jpg")no-repeat center center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none; }
+
+.whitewin {
+    background-image: url("img/d0.jpg")no-repeat center center; }
+
+.qipu {
+    background-image: url("img/d0.jpg"); }
+.qipu .yes, .qipu .no {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 35px;
+    left: 90px;
+    z-index: 10;
+    cursor: pointer; }
+.qipu .no {
+    left: 270px; }
+
+.qipub {
+    background-image: url("img/d0.jpg"); }
+.qipub .yes, .qipub .no {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 35px;
+    left: 90px;
+    z-index: 10;
+    cursor: pointer; }
+.qipub .no {
+    left: 270px; }
+
+/**
+ * @module fade
+ * @description 定义淡入落下动画
+ * @method fade-in-down
+ */
+@-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0); }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0); } }
+
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0); }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0); } }
+
+.ani.fade-in-down {
+    -webkit-animation-name: fade-in-down;
+    animation-name: fade-in-down; }
+
